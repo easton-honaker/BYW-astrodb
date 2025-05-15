@@ -1,14 +1,10 @@
-astrodb-template-db
+BYW-astrodb
 ---------------------------
 
-[![build](https://github.com/astrodbtoolkit/astrotemplate-db/actions/workflows/run_tests.yml/badge.svg)](https://github.com/astrodbtoolkit/astrotemplate-db/actions/workflows/run_tests.yml)  ![GitHub License](https://img.shields.io/github/license/astrodbtoolkit/astrodb-template-db)
+A database of a subsample of Backyard Worlds object follow-up spectroscopic observations. The database contains photometric and astrometric measurements of the sources. The database will eventually include value-added parameters from analysis such as spectral types, and model-derived parameters (Teff, logg, [M/H]). 
+This database is built from the astrodb template database ([https://github.com/astrodbtoolkit](https://github.com/astrodbtoolkit/astrodb-template-db)). 
 
 
-
-A template schema for astronomical databases. 
-
-Usage instructions are included in the companion `astrodb-utils` package: [Getting started with a new database](https://astrodb-utils.readthedocs.io/en/latest/pages/make_new_db/getting_started_new_database.html)
-
-Entity relationship diagram of the template schema
+Entity relationship diagram of the schema
 
 ![Entity Relationship Diagram](docs/figures/schema_erd.png)
