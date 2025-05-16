@@ -5,6 +5,6 @@ A database of a subsample of Backyard Worlds object follow-up spectroscopic obse
 This database is built from the astrodb template database ([https://github.com/astrodbtoolkit](https://github.com/astrodbtoolkit/astrodb-template-db)). 
 
 
-Entity relationship diagram of the schema [not correct, still under construction]
+Entity relationship diagram of the schema ]
 
 ![Entity Relationship Diagram](docs/figures/schema_erd.png)
