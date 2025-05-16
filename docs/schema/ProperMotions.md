@@ -5,19 +5,19 @@ The ProperMotions table contains proper motion measurements for sources listed i
 Columns marked with an exclamation mark (❗️) may not be empty.
 | Column Name | Description | Datatype | Length | Units  | UCD |
 | --- | --- | --- | --- | --- | --- |
-| ❗️ <ins>source</ins> | Main identifier for an object; links to Sources table | string | 50 |  | meta.id;meta.main  |
-| ❗️ pm_ra | Proper motion in RA*cos(Dec) | double |  | mas/yr | pos.pm;pos.eq.ra  |
-| pm_ra_error | Uncertainty of the proper motion in RA | double |  | mas/yr | stat.error;pos.pm;pos.eq.ra  |
-| ❗️ pm_dec | Proper motion in declination | double |  | mas/yr | pos.pm;pos.eq.dec  |
-| pm_dec_error | Uncertainty of the proper motion in Dec | double |  | mas/yr | stat.error;pos.pm;pos.eq.dec  |
+| ❗️ <ins>source</ins> | Main identifier for an object; links to Sources table | string | 100 |  | meta.id;meta.main  |
+| ❗️ mu_ra | Proper motion in RA*cos(Dec) in mas/yr | double |  | mas/yr | pos.pm;pos.eq.ra  |
+| mu_ra_error | Uncertainty of the proper motion in RA | double |  | mas/yr | stat.error;pos.pm;pos.eq.ra  |
+| ❗️ mu_dec | Proper motion in Dec in mas/yr | double |  | mas/yr | pos.pm;pos.eq.dec  |
+| mu_dec_error | Uncertainty of the proper motion value in Dec | double |  | mas/yr | stat.error;pos.pm;pos.eq.dec  |
 | adopted | Flag to indicate if this is the adopted entry | boolean |  |  |   |
-| comments | Free form comments | string | 100 |  | meta.note  |
-| ❗️ <ins>reference</ins> | Reference; links to Publications table | string | 30 |  | meta.ref  |
+| comments | Free form comments | string | 1000 |  | meta.note  |
+| ❗️ <ins>reference</ins> | Reference; links to Publications table | string | 30 |  |   |
 
 ## Indexes
 | Name | Columns | Description |
 | --- | --- | --- |
-| PK_ProperMotions | ['#ProperMotions.source', '#ProperMotions.reference'] | Primary key for ProperMotions table |
+| PK_ProperMotions | ['#ProperMotions.source', '#ProperMotions.reference'] | Primary key for Proper Motions table |
 
 ## Foreign Keys
 | Description | Columns | Referenced Columns |

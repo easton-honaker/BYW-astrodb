@@ -5,12 +5,12 @@ The ModeledParameters table contains a range of derived/inferred parameters for 
 Columns marked with an exclamation mark (❗️) may not be empty.
 | Column Name | Description | Datatype | Length | Units  | UCD |
 | --- | --- | --- | --- | --- | --- |
-| ❗️ <ins>source</ins> | Unique identifier for the source; links to Sources table | string | 50 |  | meta.id;meta.main  |
-| ❗️ <ins>parameter</ins> | Parameter name; links to ParameterList table | string | 30 |  | meta.id  |
+| ❗️ <ins>source</ins> | Unique identifier for the source; links to Sources table | string | 100 |  | meta.id;meta.main  |
+| ❗️ <ins>parameter</ins> | Parameter name; links to Parameters table | string | 30 |  | meta.id  |
 | ❗️ value | Value of the parameter | double |  |  | stat.value;meta.modelled  |
-| error | Uncertainty of the parameter value | double |  |  | stat.error;meta.modelled  |
-| ❗️ unit | Unit of the parameter value. Should be compatible with astropy.units. | string | 30 |  | meta.unit  |
-| comments | Free form comments | string | 100 |  | meta.note  |
+| value_error | Uncertainty of the parameter value | double |  |  | stat.error;meta.modelled  |
+| ❗️ unit | Unit of the parameter value. Should be compatible with astropy.units. | string | 20 |  | meta.unit  |
+| comments | Free form comments | string | 1000 |  | meta.note  |
 | ❗️ <ins>reference</ins> | Reference; links to Publications table | string | 30 |  | meta.ref  |
 
 ## Indexes
@@ -23,4 +23,4 @@ Columns marked with an exclamation mark (❗️) may not be empty.
 | --- | --- | --- |
 | Link ModeledParameters source to Sources table | ['#ModeledParameters.source'] | ['#Sources.source'] |
 | Link ModeledParameters reference to Publications table | ['#ModeledParameters.reference'] | ['#Publications.reference'] |
-| Link ModeledParameters parameter to ParameterList table | ['#ModeledParameters.parameter'] | ['#ParameterList.parameter'] |
+| Link ModeledParameters parameter to Parameters table | ['#ModeledParameters.parameter'] | ['#Parameters.parameter'] |

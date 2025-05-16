@@ -1,7 +1,7 @@
 ---
-name: simple
-"@id": "#simple"
-description: "Schema for the SIMPLE Database"
+name: BYWsampleHON
+"@id": "#BYWsampleHON"
+description: "Schema for Honaker BYW sample"
 
 ######################################################
 # CONVENTIONS

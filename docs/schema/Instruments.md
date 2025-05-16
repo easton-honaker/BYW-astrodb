@@ -8,7 +8,7 @@ Columns marked with an exclamation mark (❗️) may not be empty.
 | ❗️ <ins>instrument</ins> | Name of the instrument | string | 30 |  | instr;meta.main  |
 | ❗️ <ins>mode</ins> | Instrument mode | string | 30 |  |   |
 | ❗️ <ins>telescope</ins> | Telescope, mission, or survey name; links to Telescopes table | string | 30 |  |   |
-| description | Instrument description | string | 100 |  | meta.note  |
+| description | Instrument description | string | 1000 |  | meta.note  |
 | reference | Reference for the instrument and/or mode; links to Publications table | string | 30 |  | meta.ref  |
 
 ## Indexes
