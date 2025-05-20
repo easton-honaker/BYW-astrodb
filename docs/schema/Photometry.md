@@ -7,12 +7,13 @@ Columns marked with an exclamation mark (❗️) may not be empty.
 | --- | --- | --- | --- | --- | --- |
 | ❗️ <ins>source</ins> | Unique identifier for a source; links to Sources table | string | 100 |  | meta.id;meta.main  |
 | band | Photometry band for this measurement; links to PhotometryFilters table | string | 30 |  |   |
-| ❗️ magnitude | Photometric magnitude | double |  | mag | phot.mag  |
+| magnitude | Photometric magnitude | double |  | mag | phot.mag  |
 | magnitude_error | Uncertainty of the magnitude | double |  | mag | stat.error;phot.mag  |
 | telescope | Telescope, mission, or survey name; links to Telescopes table | string | 30 |  | instr.tel;instr.obsty  |
 | epoch | Decimal year | double |  | yr | time.epoch  |
-| comments | Free form comments | string | 1000 |  | meta.note  |
+| comments | Free form comments | string | 100 |  | meta.note  |
 | ❗️ <ins>reference</ins> | Reference; links to Publications table | string | 30 |  | meta.ref  |
+| regime | Regime for this entry; links to RegimeList table | string | 30 |  |   |
 
 ## Indexes
 | Name | Columns | Description |
@@ -26,3 +27,4 @@ Columns marked with an exclamation mark (❗️) may not be empty.
 | Link Photometry band to PhotometryFilters table | ['#Photometry.band'] | ['#PhotometryFilters.band'] |
 | Link Photometry telescope to Telescopes table | ['#Photometry.telescope'] | ['#Telescopes.telescope'] |
 | Link Photometry reference to Publications table | ['#Photometry.reference'] | ['#Publications.reference'] |
+| Link Photometry regime to RegimeList table | ['#Photometry.regime'] | ['#RegimeList.regime'] |

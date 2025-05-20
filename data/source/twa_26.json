@@ -11,15 +11,6 @@
             "comments": null
         }
     ],
-    "Associations": [
-        {
-            "association": "TW Hydra Association",
-            "membership_probability": null,
-            "comments": null,
-            "adopted": true,
-            "reference": "Eros99"
-        }
-    ],
     "SourceTypes": [
         {
             "source_type": "M9",
