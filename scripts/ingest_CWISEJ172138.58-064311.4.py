@@ -1,6 +1,7 @@
 from astrodb_utils import load_astrodb
 from astrodb_utils.sources import ingest_source, ingest_name
 from astrodb_utils.publications import ingest_publication
+from astrodb_utils.photometry import ingest_photometry
 
 # Load the database
 db_file = "tests/astrodb_template_tests.sqlite"
@@ -9,6 +10,7 @@ felis_schema = "schema/schema.yaml"
 reference_tables = [
     "Publications",
     "Instruments",
+    "Telescopes",
     "PhotometryFilters",
     "Versions",
     "RegimeList",
