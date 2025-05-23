@@ -7,13 +7,6 @@
         "reference": "Cohe03"
     },
     {
-        "instrument": "Gaia3",
-        "mode": "Imaging",
-        "telescope": "Gaia",
-        "description": null,
-        "reference": "Gaia23"
-    },
-    {
         "instrument": "SDSS",
         "mode": "Imaging",
         "telescope": "SLOAN",
@@ -40,5 +33,12 @@
         "telescope": "Generic",
         "description": null,
         "reference": null
+    },
+    {
+        "instrument": "VIRCAM",
+        "mode": "Imaging",
+        "telescope": "VISTA",
+        "description": null,
+        "reference": "VIRCAM"
     }
 ]
