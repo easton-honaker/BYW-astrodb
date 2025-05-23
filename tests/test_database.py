@@ -59,7 +59,7 @@ def test_adding_data(db):
     s = Sources(source="V4046 Sgr", ra_deg=273.54, dec_deg=-32.79, reference="Cohe03")
     ref = Publications(reference="Cutri03")
     tel = Telescopes(telescope="Fake 2MASS", reference="Cutri03")
-    pf = PhotometryFilters(band="Fake 2MASS.Ks", effective_wavelength_angstroms=2.159)
+    pf = PhotometryFilters(band="Fake 2MASS.Ks", effective_wavelength=2.159)
     reg = RegimeList(regime="fake optical")
 
     with db.session as session:

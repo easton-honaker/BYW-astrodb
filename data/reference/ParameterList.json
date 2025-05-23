@@ -1,10 +1,30 @@
 [
     {
-        "parameter": "age",
-        "description": "Age of the object"
+        "parameter": "mass",
+        "description": "Mass"
     },
     {
-        "parameter": "mass",
-        "description": "Mass of the object"
+        "parameter": "age",
+        "description": "Age"
+    },
+    {
+        "parameter": "radius",
+        "description": "Radius"
+    },
+    {
+        "parameter": "log g",
+        "description": "Log surface gravity"
+    },
+    {
+        "parameter": "T eff",
+        "description": "Effective temperature"
+    },
+    {
+        "parameter": "metallicity",
+        "description": "Metallicity"
+    },
+    {
+        "parameter": "C/O ratio",
+        "description": "C/O ratio"
     }
 ]

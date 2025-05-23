@@ -201,14 +201,14 @@ tables:
       length: 100
       description: Unified Content Descriptor of the photometry filter
       ivoa:ucd: meta.ucd
-    - name: effective_wavelength_angstroms
-      "@id": "#PhotometryFilters.effective_wavelength_angstroms"
+    - name: effective_wavelength
+      "@id": "#PhotometryFilters.effective_wavelength"
       datatype: double
       description: Effective wavelength of the photometry filter in Angstroms
       fits:tunit: Angstrom
       nullable: false
-    - name: width_angstroms
-      "@id": "#PhotometryFilters.width_angstroms"
+    - name: width
+      "@id": "#PhotometryFilters.width"
       datatype: double
       fits:tunit: Angstrom
       description: Width of the ephotometry filter in Angstroms

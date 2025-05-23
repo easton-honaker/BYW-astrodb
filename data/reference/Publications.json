@@ -118,5 +118,29 @@
         "bibcode": "2021ApJ...906...64A",
         "doi": "10.3847/1538-4357/abcb97",
         "description": "TESS Observations of the Luhman 16 AB Brown Dwarf System: Rotational Periods, Lightcurve Evolution, and Zonal Circulation"
+    },
+    {
+        "reference": "ACAM",
+        "bibcode": "2008SPIE.7014E..6XB",
+        "doi": "10.1117/12.788694",
+        "description": "ACAM: a new imager/spectrograph for the William Herschel Telescope"
+    },
+    {
+        "reference": "VIRCAM",
+        "bibcode": "2006SPIE.6269E..0XD",
+        "doi": "10.1117/12.670018",
+        "description": "The VISTA infrared camera"
+    },
+    {
+        "reference": "VISTA",
+        "bibcode": "2004SPIE.5489..638M",
+        "doi": "10.1117/12.551233",
+        "description": "The VISTA project: a review of its progress and lessons learned developing the current program"
+    },
+    {
+        "reference": "Mura07",
+        "bibcode": "2007PASJ...59S.369M",
+        "doi": "10.1093/pasj/59.sp2.S369",
+        "description": "The Infrared Astronomical Mission AKARI*"
     }
 ]
