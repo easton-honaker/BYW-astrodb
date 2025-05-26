@@ -4,13 +4,13 @@ from astrodb_utils.publications import ingest_publication
 from astrodb_utils.photometry import ingest_photometry
 
 # Load the database
-db_file = "tests/astrodb_template_tests.sqlite"
+db_file = "BYW_HON.sqlite"
 felis_schema = "schema/schema.yaml"
 
 reference_tables = [
     "Publications",
+    "Telescopes"
     "Instruments",
-    "Telescopes",
     "PhotometryFilters",
     "Versions",
     "RegimeList",
@@ -38,8 +38,13 @@ def ingest_CWISEJ_1721(db): ##- question: is it better to leave columns as "None
                   reference = "HONA26",
                   ra = 260.4107662,
                   dec = -6.7198597,
-                  epoch = "J2000",
-                  comment="CatWISE2020")
+                  epoch = 2000.0,
+                  equinox = "J2000",
+                  comment="CatWISE2020",
+                  ra_col_name = "ra_deg",
+                  dec_col_name = "dec_deg",
+                  epoch_col_name = "epoch_year"
+                  )
     
     ingest_name(db,
                  source = "CWISEJ172138.58-064311.4",
@@ -54,29 +59,32 @@ def ingest_photometry_CWISEJ_1721(db):
     
 
     ingest_photometry(db,
-                      "CWISEJ172138.58-064311.4",
+                      source = "CWISEJ172138.58-064311.4",
                       band="VISTA.J",
                       magnitude = 16.444,
                       magnitude_error = 0.011,
-                      telescope = 'VISTA',
-                      reference = 'Goodstuff')
+                      telescope = "VISTA",
+                      reference = "Goodstuff")
     ingest_photometry(db,
-                      "CWISEJ172138.58-064311.4",
+                      source = "CWISEJ172138.58-064311.4",
                       band="2MASS.H",
                       magnitude = 15.424,
                       magnitude_error = 0.096,
-                      telescope = '2MASS',
-                      reference = 'Goodstuff')
+                      telescope = "2MASSS",
+                      reference = "Goodstuff")
     ingest_photometry(db,
-                      "CWISEJ172138.58-064311.4",
+                      source = "CWISEJ172138.58-064311.4",
                       band="VISTA.Ks",
                       magnitude = 14.978,
                       magnitude_error = 0.012,
-                      telescope = 'VISTA',
-                      reference = 'Goodstuff')
+                      telescope = "VISTA",
+                      reference = "Goodstuff")
     
 def ingest_propermotions_CWISEJ_1721(db):
-   
+    ingest_publication(db, 
+                       reference="Goodstuff", 
+                       description="BYW goodstuff sheet",
+                       ignore_ads=True)   
     propermotiondata = [
         {
             "source": "CWISEJ172138.58-064311.4",
@@ -95,8 +103,8 @@ def ingest_propermotions_CWISEJ_1721(db):
 DB_SAVE = True
 
 ingest_CWISEJ_1721(db)
-ingest_photometry_CWISEJ_1721(db)
-ingest_propermotions_CWISEJ_1721(db)
+#ingest_photometry_CWISEJ_1721(db)
+#ingest_propermotions_CWISEJ_1721(db)
 
 
 if DB_SAVE:
