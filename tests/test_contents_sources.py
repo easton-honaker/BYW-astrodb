@@ -6,12 +6,16 @@ As users add their own data, these tests should be modified to reflect the new d
 
 import pytest
 from sqlalchemy import or_
+import os
 
 
 def test_sources(db):
     # Test that Sources has expected number of entries
     n_sources = db.query(db.Sources).count()
-    assert n_sources == 6, f"found {n_sources} sources"
+    # let's make this flexible- we should have one json file per source
+    # the number of sources should match the number of json files
+    n_jsons = len(os.listdir('data/source'))
+    assert n_sources == n_jsons, f"found {n_sources} sources"
 
 
 @pytest.mark.parametrize(
