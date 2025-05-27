@@ -1,0 +1,65 @@
+{
+    "Sources": [
+        {
+            "source": "CWISE J172138.58-064311.4",
+            "ra_deg": 260.4107662,
+            "dec_deg": -6.7198597,
+            "epoch_year": null,
+            "equinox": "J2000",
+            "reference": "HONA26",
+            "other_references": null,
+            "comments": "CatWISE2020"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "1712-0543"
+        },
+        {
+            "other_name": "CWISE J172138.58-064311.4"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS.H",
+            "magnitude": 15.424,
+            "magnitude_error": 0.096,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Goodstuff",
+            "regime": null
+        },
+        {
+            "band": "VISTA.J",
+            "magnitude": 16.444,
+            "magnitude_error": 0.011,
+            "telescope": "VISTA",
+            "epoch": null,
+            "comments": null,
+            "reference": "Goodstuff",
+            "regime": null
+        },
+        {
+            "band": "VISTA.Ks",
+            "magnitude": 14.978,
+            "magnitude_error": 0.012,
+            "telescope": "VISTA",
+            "epoch": null,
+            "comments": null,
+            "reference": "Goodstuff",
+            "regime": null
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 115.13,
+            "pm_ra_error": 8.7,
+            "pm_dec": -97.56,
+            "pm_dec_error": 9.7,
+            "adopted": null,
+            "comments": null,
+            "reference": "Goodstuff"
+        }
+    ]
+}

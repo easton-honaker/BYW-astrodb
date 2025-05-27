@@ -260,6 +260,7 @@ tables:
         - "#Versions.version"
 
 
+
   - name: RegimeList
     "@id": "#RegimeList"
     description: Regime lookup table
@@ -274,6 +275,12 @@ tables:
       description: Regime identifier string
       ivoa:ucd: meta.id;meta.main
       nullable: false
+    - name: description
+      "@id": "#RegimeList.description"
+      datatype: string
+      length: 100
+      description: Description of the regime
+      ivoa:ucd: meta.note
 
     indexes:
       - name: PK_RegimeList
@@ -281,7 +288,6 @@ tables:
         description: Primary key for RegimeList table
         columns: 
         - "#RegimeList.regime"
-
 
 
   - name: ParameterList
