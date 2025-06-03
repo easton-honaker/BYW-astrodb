@@ -12,7 +12,7 @@ db_file = "BYW_HON.sqlite"
 felis_schema = "schema/schema.yaml"
 
 DB_SAVE = False
-DB_RECREATE = True
+DB_RECREATE = False
 
 reference_tables = [
     "Publications",
@@ -65,6 +65,7 @@ def ingest_BYWsample_source(db):
                   comment = "CatWISE2020",
                   reference= "HONA26",
                   raise_error=False,
+                  use_simbad=False
                   )
     
     ingest_name(db,
